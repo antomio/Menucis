@@ -1,5 +1,42 @@
-/*
-	1. css hover
-	2. drop down
-	
-*/
+
+body {
+	background-image: url("img/kupols-interjers2.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: black;
+}
+
+.content {
+	width: 80%;
+	min-height: 80%;
+	background-color: black;
+	opacity: 0.5;
+	margin-left: auto;
+	margin-right: auto;
+}
+.nav {
+	position: relative;
+}
+li {
+	display: inline-block;
+}
+a {
+	text-transform: uppercase;
+	padding: 1%;
+	margin-left: 35%;
+	margin-right: 35%;
+	display: inline-block; 
+	text-decoration: none;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+}
+.nav:hover .dropdown-content {
+	display: block;
+}
