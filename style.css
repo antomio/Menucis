@@ -1,42 +1,64 @@
 
 body {
-	background-image: url("img/kupols-interjers2.png");
+	background-image: url("img/doge.png");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: top;
 	background-color: black;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
 
-.content {
-	width: 80%;
-	min-height: 80%;
-	background-color: black;
-	opacity: 0.5;
-	margin-left: auto;
-	margin-right: auto;
-}
-.nav {
-	position: relative;
-}
 li {
-	display: inline-block;
+    display: inline-block;
+    margin: 0 9%;
 }
-a {
-	text-transform: uppercase;
-	padding: 1%;
-	margin-left: 35%;
-	margin-right: 35%;
-	display: inline-block; 
-	text-decoration: none;
+li a {
+	transition: all 0.2s linear 0s;
 }
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffaa00;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
 .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: black;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	padding: 12px 16px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-.nav:hover .dropdown-content {
-	display: block;
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ffeecc;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
